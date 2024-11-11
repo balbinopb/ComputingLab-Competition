@@ -34,9 +34,9 @@ int main()
     int A, B, X, K; //1 10 5 1
     cin >> A >> B >> X >> K;
     int closeBfromBottom = ((B / X) * X);
-    int closeBfromUp = ((B / X) + 1) * X;
-    if (B-closeBfromBottom > closeBfromUp-B){
-        A += closeBfromUp;
+    int closeBfromTop = ((B / X) + 1) * X;
+    if (B-closeBfromBottom > closeBfromTop-B){
+        A += closeBfromTop;
     }else{
         A += closeBfromBottom;
     }
